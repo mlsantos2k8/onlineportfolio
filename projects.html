@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projects — Eliott</title>
+  <title>Projects — Michael</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500&display=swap" rel="stylesheet"/>
@@ -36,13 +36,12 @@
     :class="scrolled?'bg-white/90 dark:bg-zinc-950/90 backdrop-blur-md shadow-sm shadow-black/5':'bg-transparent'">
     <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
       <a href="index.html" class="font-display font-bold text-xl tracking-tight z-10">
-        <span class="text-zinc-900 dark:text-white">eli</span><span class="text-accent">ott</span>
+        <span class="text-zinc-900 dark:text-white">mich</span><span class="text-accent">ael</span>
       </a>
       <ul class="hidden md:flex items-center gap-8 text-sm font-medium">
         <li><a href="index.html#services" class="nav-link text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">Services</a></li>
         <li><a href="projects.html" class="nav-link text-accent font-medium">Work</a></li>
         <li><a href="index.html#about" class="nav-link text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">About</a></li>
-        <li><a href="blog.html" class="nav-link text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">Blog</a></li>
         <li><a href="index.html#contact" class="nav-link text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">Contact</a></li>
       </ul>
       <div class="flex items-center gap-3">
@@ -62,7 +61,6 @@
         <li><a href="index.html#services" @click="mobileMenu=false" class="block text-zinc-700 dark:text-zinc-300">Services</a></li>
         <li><a href="projects.html" class="block text-accent font-medium">Work</a></li>
         <li><a href="index.html#about" @click="mobileMenu=false" class="block text-zinc-700 dark:text-zinc-300">About</a></li>
-        <li><a href="blog.html" @click="mobileMenu=false" class="block text-zinc-700 dark:text-zinc-300">Blog</a></li>
         <li><a href="index.html#contact" @click="mobileMenu=false" class="block text-zinc-700 dark:text-zinc-300">Contact</a></li>
       </ul>
     </div>
@@ -73,8 +71,8 @@
       <div class="absolute top-0 right-0 w-80 h-80 bg-accent/10 rounded-full blur-3xl pointer-events-none"></div>
       <div class="max-w-6xl mx-auto px-6 relative z-10">
         <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">Portfolio</p>
-        <h1 class="reveal font-display font-bold text-5xl md:text-6xl text-zinc-900 dark:text-white leading-tight mb-4">All Projects</h1>
-        <p class="reveal text-lg text-zinc-500 dark:text-zinc-400 max-w-xl leading-relaxed mb-8">A complete look at my work across UI/UX design, frontend development and landing pages.</p>
+        <h1 class="reveal font-display font-bold text-5xl md:text-6xl text-zinc-900 dark:text-white leading-tight mb-4">My Projects</h1>
+        <p class="reveal text-lg text-zinc-500 dark:text-zinc-400 max-w-xl leading-relaxed mb-8">A curated look at my production builds—combining backend database logic, custom coding, and rapid agency web deployment.</p>
         <div class="reveal flex flex-wrap gap-2">
           <template x-for="f in filterOptions" :key="f.value">
             <button
@@ -144,9 +142,9 @@
           <div class="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-full blur-3xl pointer-events-none"></div>
           <div class="absolute bottom-0 left-0 w-40 h-40 bg-accent/10 rounded-full blur-2xl pointer-events-none"></div>
           <div class="relative z-10">
-            <p class="text-xs font-medium text-accent tracking-widest uppercase mb-4">Ready to start?</p>
-            <h2 class="font-display font-bold text-3xl md:text-4xl text-white mb-4">Want your project here?</h2>
-            <p class="text-zinc-400 max-w-md mx-auto mb-8">I'm available for new projects. Tell me about what you're building and let's see if we're a good fit.</p>
+            <p class="text-xs font-medium text-accent tracking-widest uppercase mb-4">Currently open to new opportunities.</p>
+            <h2 class="font-display font-bold text-3xl md:text-4xl text-white mb-4">Ready for the next deployment.</h2>
+            <p class="text-zinc-400 max-w-md mx-auto mb-8">I am looking for a full-time remote role in web development or systems engineering. Reach out with details about your team or tech stack, and let’s discuss how I can contribute.</p>
             <a href="index.html#contact" class="inline-flex items-center gap-2 btn-primary bg-accent text-white font-medium px-8 py-3.5 rounded-full hover:bg-accent-light transition-colors">Start a project &rarr;</a>
           </div>
         </div>
@@ -154,12 +152,11 @@
     </section>
   </main>
 
-  <footer class="border-t border-zinc-100 dark:border-zinc-900">
-    <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <p class="text-sm text-zinc-400">&copy; <span id="year"></span> Eliott. All rights reserved.</p>
-      <p class="text-xs text-zinc-500">Built with Tailwind CSS &amp; Alpine.js</p>
-    </div>
-  </footer>
+<footer class="border-t border-zinc-100 dark:border-zinc-900">
+  <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <p class="text-sm text-zinc-400">© <span id="yr"></span> Michael. All rights reserved.</p>
+  </div>
+</footer>
 
   <script>
     function projects() {
@@ -171,22 +168,22 @@
 
         filterOptions: [
           { value: 'all',       label: 'All (9)' },
-          { value: 'saas',      label: 'SaaS' },
-          { value: 'landing',   label: 'Landing page' },
-          { value: 'agency',    label: 'Agency' },
+          { value: 'shopify',      label: 'Shopify Liquid' },
+          { value: 'design',   label: 'UI/UX Design' },
+          { value: 'wordpress',    label: 'WordPress' },
           { value: 'ecommerce', label: 'E-commerce' },
+		  { value: 'api', label: 'Restful API' },
         ],
 
         allProjects: [
-          { id:1,  title:'Novu — SaaS Dashboard',  category:'saas',      categoryLabel:'SaaS',         tags:['SaaS','Figma','Tailwind'],           year:'2025', desc:'Complete redesign of a B2B notification platform. Reduced cognitive load by 40% and improved trial-to-paid conversion.',    img:'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=700&q=80',  url:'case-study.html' },
-          { id:2,  title:'Finlo — Fintech App',    category:'landing',   categoryLabel:'Landing page', tags:['Landing page','Fintech','Alpine.js'], year:'2024', desc:'Marketing site and onboarding flow for a personal finance app targeting young professionals.',                              img:'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=80', url:'case-study.html' },
-          { id:3,  title:'Orea — Creative Agency', category:'agency',    categoryLabel:'Agency',       tags:['Agency','Animation'],                year:'2024', desc:'Bold editorial site for a Paris-based branding studio. Scroll-driven animations and custom cursor.',                      img:'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=700&q=80', url:'case-study.html' },
-          { id:4,  title:'Vesta — Real Estate',    category:'landing',   categoryLabel:'Landing page', tags:['Landing page','Real Estate'],         year:'2024', desc:'Conversion-focused landing page for a proptech startup entering the French market.',                                      img:'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=700&q=80',  url:'case-study.html' },
-          { id:5,  title:'Arkio — SaaS Analytics', category:'saas',      categoryLabel:'SaaS',         tags:['SaaS','Dashboard','Figma'],           year:'2024', desc:'Data visualisation dashboard for a B2B analytics platform. Designed for clarity at high data density.',                img:'https://images.unsplash.com/photo-1581472723648-909f4851d4ae?w=700&q=80', url:'case-study.html' },
-          { id:6,  title:'Bloom — E-commerce',     category:'ecommerce', categoryLabel:'E-commerce',   tags:['E-commerce','Shopify'],               year:'2023', desc:'Custom Shopify theme for a sustainable cosmetics brand. Mobile-first with high emphasis on product imagery.',           img:'https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=700&q=80',  url:'case-study.html' },
-          { id:7,  title:'Mira — Health App',      category:'landing',   categoryLabel:'Landing page', tags:['Landing page','Health','Tailwind'],   year:'2023', desc:'App landing page for a mental wellness startup. Warm, accessible design with strong social proof.',                    img:'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=700&q=80', url:'case-study.html' },
-          { id:8,  title:'Noto — Agency Rebrand',  category:'agency',    categoryLabel:'Agency',       tags:['Agency','Rebrand'],                  year:'2023', desc:'Full rebrand and website for a digital communications agency in Lyon.',                                                img:'https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80', url:'case-study.html' },
-          { id:9,  title:'Kova — E-commerce',      category:'ecommerce', categoryLabel:'E-commerce',   tags:['E-commerce','Figma'],                year:'2023', desc:'Product page redesign and checkout optimisation for a DTC furniture brand. Reduced cart abandonment by 18%.',         img:'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80',  url:'case-study.html' },
+          { id:1,  title:'Sonik Wall Linings - Build',  category:'shopify',      categoryLabel:'Shopify Liquid',         tags:['Shopify Liquid','Figma','Custom CSS'],           year:'2025', desc:'Developed a high-converting Shopify platform for a New Zealand architectural and DIY acoustic paneling brand. Customized Liquid templates to handle multi-variant sizing, sample ordering workflows, and fast asset delivery for high-resolution product media.',    img:'images/SonikWallLinings_1.png',  url:'https://sonikwalllinings.co.nz' },
+          { id:2,  title:'Lamont Street Partners - Redesign',    category:'design',   categoryLabel:'UI/UX Design', tags:['UI/UX Design','Elementor','Custom CSS'], year:'2023', desc:'Built a corporate WordPress platform for a real estate private equity firm managing over $1 billion in assets. Implemented bilingual support (English and Japanese), dynamic capital-deployment counters, and an institutional layout built for strategic partnerships.',                              img:'images/lamontstreet.png', url:'https://lamontstreet.com' },
+          { id:3,  title:'Kinetic Point Capital - Design', category:'wordpress',    categoryLabel:'WordPress',       tags:['WordPress', 'Finance Portfolio'],                year:'2024', desc:'Configured a clean, institutional WordPress website for a private acquisition firm targeting small-to-mid-market businesses. Structured detailed acquisition criteria layouts alongside secure, compliance-ready contact workflows for confidential founder inquiries.',                      img:'images/KineticPointCapital.png', url:'https://kineticpointcapital.com' },
+          { id:4,  title:'Balanced Rods - ECommerce Build',    category:'shopify',   categoryLabel:'Shopify Liquid', tags:['Shopify Liquid','Custom CSS', 'E-Commerce'],         year:'2024', desc:'Built a custom Shopify e-commerce store for an American manufacturer of patented ergonomic fishing rods and handles. Engineered clean variant structures for made-to-order builds and optimized media galleries to showcase technical specifications without slowing down page loads.',                                      img:'images/TheBalancedRod.webp',  url:'https://balancedrodsfishing.com' },
+          { id:5,  title:'JIR Management INC - Build', category:'wordpress',      categoryLabel:'WordPress',         tags:['WordPress','DNS Configuration'],           year:'2023', desc:'Engineered a responsive WordPress platform showcasing both commercial construction services and mobile heavy-duty fleet maintenance. Built a fast, scannable service hierarchy with direct lead-capture forms designed for rapid mobile accessibility.',                img:'images/JIR.jpg', url:'https://jirmanagement.com' },
+          { id:6,  title:'Tradewinds Services - Landing Build',     category:'design', categoryLabel:'UI/UX Design',   tags:['UI/UX Design','Elementor','Custom CSS'],               year:'2023', desc:'Developed an end-to-end WordPress landing architecture tailored for a 24/7 commercial truck repair and roadside assistance facility. Prioritized mobile-first performance and localized dispatch touchpoints so stranded fleet operators can request urgent diagnostics immediately.',           img:'images/Tradewinds.jpg',  url:'https://tradewindsfleetservices.com' },
+          { id:7,  title:'Wider Logistics - Build',      category:'shopify',   categoryLabel:'Shopify Liquid', tags:['Shopify Liquid','Custom CSS'],   year:'2024', desc:'Architected a modern, conversion-focused web platform for an international freight and supply chain provider operating since 1991. Structured clear service hierarchies across ocean, air, and warehousing divisions alongside streamlined quote-request workflows.',                    img:'images/WiderLogistics.webp', url:'https://widerlogistics.com' },
+          { id:8,  title:'API Ingestion System',  category:'api',    categoryLabel:'Resful API',       tags:['Resful API','Rebrand'],                  year:'2021', desc:'Engineered two distinct PHP Lumen microservices to fetch, parse, and normalize asymmetrical Pokémon and Yu-Gi-Oh! card data from external server endpoints into a custom WordPress database schema. Built the front-end marketplace alongside a custom HTML/CSS/JS internal dashboard, enabling employees to rapidly retrieve and preview card metadata during listing workflows.',                                                img:'images/CustomAPI.png', url:'project.html' },
         ],
 
         get visibleCount() {
